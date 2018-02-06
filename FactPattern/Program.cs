@@ -10,18 +10,9 @@ namespace FactPattern
     {
         class car
         {
-            string company()
-            {
-
-            }
-            string Model()
-            {
-
-            }
-            int Speed()
-            {
-
-            }
+            public string company { get; set; }
+            public string Model { get; set; }
+            public int Speed { get; set; }
         }
         class Suzuki : car 
         {
@@ -40,7 +31,25 @@ namespace FactPattern
         {
 
         }
+        class SuzukiFactory
+        {
+            public SuzukiFactory()
+            {
+                this.company = "Suzuki";
+                this.model = "idontknow";
+                this.speed = 60;
 
+            }
+            public SuzukiFactory(String model, int speed)
+            {
+                this.company = "Suzuki";
+                this.model = model;
+                this.speed = speed;
+            }
+            string model;
+            int speed;
+
+        }
     }
         static void Main(string[] args)
         {
