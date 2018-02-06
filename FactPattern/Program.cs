@@ -10,13 +10,40 @@ namespace FactPattern
     {
         class car
         {
-            string Company(string name)
+            string company()
+            {
+
+            }
+            string Model()
+            {
+
+            }
+            int Speed()
             {
 
             }
         }
+        class Suzuki : car 
+        {
+            string company;
+            string model;
+            int speed;
+        }
+        class Toyota : car
+        {
+            string company;
+            string model;
+            int speed;
+        }
+
+        class CarFactory
+        {
+
+        }
+
+    }
         static void Main(string[] args)
         {
         }
-    }
+    
 }
