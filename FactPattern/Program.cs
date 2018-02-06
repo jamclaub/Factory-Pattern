@@ -8,6 +8,13 @@ namespace FactPattern
 {
     class Program
     {
+        class car
+        {
+            string Company(string name)
+            {
+
+            }
+        }
         static void Main(string[] args)
         {
         }
